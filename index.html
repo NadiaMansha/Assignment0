@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background-color:#d9c2c2;
+
+        }
+
+        h1 { 
+            color:#732980;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        div {
+            margin: 2px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .pinfo input {
+
+            border-radius: 20px;
+            border: 2px solid#71317c  ;
+            padding: 9px 40px 9px 40px;
+            margin: 10px
+        }
+
+        #btn {
+
+            margin-top: 10px;
+            background-color:#71317c;
+            color: black;
+            border-radius: 20px;
+            padding: 9px 40px 9px 40px;
+            font-size: large;
+        }
+
+        .table th {
+            background-color:#71317c ;
+        }
+
+        table {
+            border: 2px solid indigo;
+            border-radius: 5px;
+        }
+
+        .table input {
+            border: none;
+
+
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Student Record </h1>
+
+    <form action="" id="myform" onsubmit="return validation()">
+        <div class="pinfo">
+    <pre>
+            Name
+            <input type="text" name="name" id="uname"><span  id="username"></span>
+            Father Name
+            <input type="text" name="fathername" id="fname"><span id="faname"></span>
+            Contact
+            <input type="number"name="phone" id="cnt"><span  id="contact"></span>
+            Institution Name
+            <input type="text" name="institute" id="instname"><span  id="inst"></span>
+            Semester
+            <input type="number" name="class" id="sem"><span  id="semester"></span>
+            Previous Exam Result
+            <input type="number" name="previousresult" id="preresult"><span  id="presult"></span>
+    </pre>
+    </div>
+
+
+        <div class="table">
+            <table>
+                <th>Subject</th>
+                <th>Total Marks</th>
+                <th>Obtained Marks</th>
+                <tr>
+                    <td><input type="text" name="subject1" id="s1"></td>
+                    <td><input type="number" name="total marks1" id="tm1"></td>
+                    <td><input type="number" name="obtained marks1" id="ob1"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="text" name="subject2" id="s2"></td>
+                    <td><input type="number" name="total marks2" id="tm2"></td>
+                    <td><input type="number" name="obtained marks2" id="ob2"></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" name="subject3" id="s3"></td>
+                    <td><input type="number" name="total marks3" id="tm3"></td>
+                    <td><input type="number" name="obtained marks3" id="ob3"></td>
+
+                </tr>
+                <tr>
+                    <td><input type="text" name="subject4" id="s4"></td>
+                    <td><input type="number" name="total marks4" id="tm4"></td>
+                    <td><input type="number" name="obtained marks4" id="ob4"></td>
+                </tr>
+
+            </table>
+        </div>
+        <input type="submit" value="submit" id="btn">
+    </form>
+
+
+</body>
+
+
+</html
